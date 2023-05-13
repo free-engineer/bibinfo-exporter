@@ -2,6 +2,7 @@ javascript: (function () {
     var p = document.getElementById("productTitle");//書籍のタイトルの処理
     if (!p) var p = document.getElementById("ebooksProductTitle");
     var title = p.innerText.trim();
+    alert(title);
     var asin = document.getElementById('ASIN');//ASIN番号の処理
     if (asin) {
         var a = asin.value;
@@ -43,4 +44,4 @@ javascript: (function () {
     var lines = h1title + link + mdimage + author + '\n' + pubdata[1] + '\n' + pubdata[2];
     document.getElementById('bookDescription_feature_div').innerHTML = '<textarea style="height:500px">' + lines + '</textarea>';
 
-})();   
+})();
