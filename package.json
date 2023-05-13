@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "minify": "uglifyjs src/script.js --compress --mangle --warn --output dist/script.min.js",
+    "production": "rm -f dist/script.min.js && npm run minify --silent"
+  },
+  "author": "Rad D00d https://jerryjones.dev/2018/03/08/tutorial-how-to-minify-version-a-js-file-with-npm-scripts/",
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
